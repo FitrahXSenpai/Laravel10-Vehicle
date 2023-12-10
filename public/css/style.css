@@ -1,0 +1,128 @@
+html, body, h1, h2, h3, h4, h5, h6, .labels {
+    font-family: "Lucida Console", Monaco, monospace;
+    user-select: none;
+}
+
+.form-control { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+    resize: none; 
+    outline: none; 
+}
+
+.indents {
+    text-align: justify; 
+    text-indent: 0.2in;
+}
+
+.loginbtn { 
+    width: 100%;
+    padding: 10px 10px; 
+    position: relative; 
+    cursor: pointer; 
+    outline: none; 
+} 
+
+.form-control:focus { 
+    border-color: #000000; 
+    -webkit-box-shadow: 0 0 6px #78DCC3; 
+    -moz-box-shadow: 0 0 6px #78DCC3; 
+    box-shadow: 0 0 6px #78DCC3; 
+} 
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_info .profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.profile_info h4 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.texts:link, .texts:visited { 
+    color: #FF0000; 
+    background-color: transparent; 
+    text-decoration: None; 
+    text-align: center;
+    cursor: pointer;
+} 
+
+.stexts:link, .stexts:visited { 
+    color: #FF0000; 
+    background-color: transparent; 
+    text-decoration: None; 
+    text-align: center;
+    cursor: pointer;
+} 
+
+.texts:hover, .texts:active { 
+    color: #000000; 
+    background-color: transparent; 
+    text-decoration: None; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.stexts:hover, .stexts:active { 
+    color: #ffffff; 
+    background-color: transparent; 
+    text-decoration: None; 
+    text-align: center;
+    cursor: pointer;
+}
+
+.block-btn {
+    width: 100%; 
+    font-size: 20px; 
+    padding: 10px 10px; 
+    position: relative; 
+    cursor: pointer; 
+    outline: none;
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: #fff url(http://laravel10-app.test/img/up.png);
+    border-radius: 50%;
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#toTopBtn.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  border: 4px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
